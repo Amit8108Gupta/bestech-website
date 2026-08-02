@@ -414,11 +414,11 @@ a {
     max-width: 1100px;
     margin: auto;
 
-    background:
+     background:
         linear-gradient(
             135deg,
-            #073b70,
-            #90002b
+            rgba(100, 0, 28, 0.92),
+            rgba(145, 20, 55, 0.85)
         );
 
     color: white;
@@ -571,7 +571,7 @@ a {
 ========================= */
 
 footer {
-    background: #3d000f;
+    background: rgba(87, 4, 27, 1);
 
     color: white;
 
