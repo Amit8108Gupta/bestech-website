@@ -66,7 +66,7 @@ a {
     align-items: center;
     justify-content: center;
 
-    background: linear-gradient(135deg, #0a4d8c, #ff9800);
+    background: linear-gradient(135deg, #800020, #ff9800);
 
     color: white;
     font-size: 25px;
@@ -132,17 +132,17 @@ a {
     min-height: 620px;
 
     background:
-        radial-gradient(
-            circle at 85% 20%,
-            rgba(255,152,0,0.24),
-            transparent 30%
-        ),
-        linear-gradient(
-            135deg,
-            #062d57,
-            #0a4d8c 60%,
-            #1264ad
-        );
+    radial-gradient(
+        circle at 85% 20%,
+        rgba(255, 152, 0, 0.22),
+        transparent 30%
+    ),
+    linear-gradient(
+        135deg,
+        #4d0013,
+        #800020 60%,
+        #9b1638
+    );
 
     display: flex;
     align-items: center;
@@ -342,7 +342,7 @@ a {
 }
 
 .section-heading h2 {
-    color: #073b70;
+    color: #70001c;
 
     font-size: 36px;
 
@@ -418,7 +418,7 @@ a {
         linear-gradient(
             135deg,
             #073b70,
-            #0b5da5
+            #90002b
         );
 
     color: white;
@@ -571,7 +571,7 @@ a {
 ========================= */
 
 footer {
-    background: #042b52;
+    background: #3d000f;
 
     color: white;
 
