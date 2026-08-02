@@ -675,13 +675,21 @@ a {
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
 
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.3fr;
+    display: flex;
+    flex-direction: column;
 
-    gap: 45px;
+    gap: 30px;
+}
+
+.footer-column {
+    width: 100%;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
 }
 
 .footer-logo-area {
@@ -768,10 +776,15 @@ a {
 
 .footer-column ul {
     list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px 25px;
 }
 
 .footer-column ul li {
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .footer-column ul li a {
@@ -862,6 +875,10 @@ a {
         flex-direction: column;
 
         text-align: center;
+    }
+     .footer-column ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
 }
