@@ -657,45 +657,6 @@ a {
     transform: translateY(-3px);
 }
 
-/* =========================
-   CONTACT
-========================= */
-
-.contact-box {
-    max-width: 1000px;
-
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 20px;
-}
-
-.contact-box > div {
-    background: white;
-
-    padding: 25px;
-
-    border-radius: 14px;
-
-    box-shadow:
-        0 5px 25px rgba(0,0,0,0.06);
-}
-
-.contact-box strong {
-    color: #073b70;
-}
-
-.contact-box p {
-    margin-top: 6px;
-
-    font-size: 13px;
-
-    color: #64748b;
-}
 
 /* =========================
    FOOTER
