@@ -1544,3 +1544,97 @@ a {
         display: none;
     }
 }
+/* =====================================
+   FINAL RESPONSIVE NAVIGATION
+===================================== */
+
+/* DESKTOP */
+.menu-toggle {
+    display: none;
+}
+
+/* TABLET + SMALL DESKTOP + MOBILE */
+@media screen and (max-width: 950px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    /* Hide normal menu */
+    .nav-links {
+        display: none !important;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: #ffffff;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 15px 25px;
+
+        box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+
+        z-index: 9999;
+    }
+
+    /* Show hamburger */
+    .menu-toggle {
+        display: block !important;
+
+        background: transparent;
+        border: none;
+
+        color: #800020;
+
+        font-size: 30px;
+
+        cursor: pointer;
+
+        margin-left: 10px;
+
+        z-index: 10000;
+    }
+
+    /* Open menu */
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: block;
+
+        width: 100%;
+
+        padding: 13px 5px;
+
+        color: #800020;
+
+        border-bottom: 1px solid rgba(128,0,32,0.08);
+    }
+}
+
+/* SMALL MOBILE */
+@media screen and (max-width: 650px) {
+
+    .brand-text h2 {
+        font-size: 13px;
+    }
+
+    .logo-box {
+        width: 45px;
+        height: 45px;
+    }
+
+    .exam-btn {
+        display: none;
+    }
+}
