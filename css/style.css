@@ -859,7 +859,8 @@ a {
 
 /* MOBILE */
 
-@media (max-width: 600px) {
+@media (max-width: 600px) 
+{
 
     .main-footer {
         padding: 50px 20px 0;
@@ -880,8 +881,8 @@ a {
         flex-direction: column;
         gap: 10px;
     }
-    /* =========================
-  
+    
+}
 /* =========================
    RESPONSIVE
 ========================= */
