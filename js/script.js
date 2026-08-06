@@ -1,27 +1,33 @@
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+document.addEventListener("DOMContentLoaded", function () {
 
-menuToggle.addEventListener("click", () => {
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
 
-    navLinks.classList.toggle("active");
-
-    if (navLinks.classList.contains("active")) {
-        menuToggle.textContent = "✕";
-    } else {
-        menuToggle.textContent = "☰";
+    if (!menuToggle || !navLinks) {
+        console.log("Mobile menu elements not found");
+        return;
     }
 
-});
+    menuToggle.addEventListener("click", function () {
 
+        navLinks.classList.toggle("active");
 
-// Close menu after clicking a link
+        if (navLinks.classList.contains("active")) {
+            menuToggle.textContent = "✕";
+        } else {
+            menuToggle.textContent = "☰";
+        }
 
-document.querySelectorAll(".nav-links a").forEach(link => {
+    });
 
-    link.addEventListener("click", () => {
+    document.querySelectorAll("#navLinks a").forEach(function (link) {
 
-        navLinks.classList.remove("active");
-        menuToggle.textContent = "☰";
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove("active");
+            menuToggle.textContent = "☰";
+
+        });
 
     });
 

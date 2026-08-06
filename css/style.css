@@ -1480,3 +1480,65 @@ a {
     }
 
 }
+/* ===== FINAL MOBILE MENU FIX ===== */
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 950px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        border: none;
+        background: transparent;
+        color: #800020;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 10001;
+    }
+
+    .nav-links {
+        display: none !important;
+
+        position: absolute;
+        top: 78px;
+        left: 0;
+
+        width: 100%;
+
+        background: #ffffff;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 15px 25px;
+
+        z-index: 10000;
+
+        box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+
+        padding: 13px 5px;
+
+        color: #800020;
+
+        border-bottom: 1px solid rgba(128,0,32,0.08);
+    }
+}
