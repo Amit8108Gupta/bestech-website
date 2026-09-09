@@ -2035,3 +2035,402 @@ a {
     }
 
 }
+/* =========================================
+   BESTECH LEARNING LIBRARY PAGE
+   ========================================= */
+
+.library-hero {
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(135deg, rgba(128,0,32,.96), rgba(91,0,22,.94)),
+        url("images/logo.png") center/cover no-repeat;
+    color: #fff;
+}
+
+.library-hero-content {
+    width: min(1150px, 90%);
+    margin: auto;
+    padding: 80px 0;
+}
+
+.library-badge {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 30px;
+    background: rgba(255,165,0,.18);
+    border: 1px solid rgba(255,190,80,.55);
+    color: #ffd27a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.library-hero h1 {
+    max-width: 800px;
+    margin: 22px 0 15px;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.05;
+}
+
+.library-hero h1 span {
+    color: #ffb347;
+}
+
+.library-hero p {
+    max-width: 700px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f9e8df;
+}
+
+.library-hero-buttons,
+.library-cta-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.library-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.library-btn.primary {
+    background: linear-gradient(135deg, #ff9800, #ffb347);
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(255,152,0,.25);
+}
+
+.library-btn.secondary {
+    background: rgba(255,255,255,.1);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.35);
+}
+
+.library-btn:hover {
+    transform: translateY(-3px);
+}
+
+.library-section {
+    padding: 85px 0;
+    background: #fff;
+}
+
+.library-container {
+    width: min(1150px, 90%);
+    margin: auto;
+}
+
+.library-heading {
+    max-width: 760px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.library-heading > span {
+    color: #c76b00;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.library-heading h2 {
+    margin: 10px 0 15px;
+    color: #800020;
+    font-size: clamp(30px, 4vw, 46px);
+}
+
+.library-heading p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.library-highlight {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.library-highlight > div {
+    padding: 25px 20px;
+    border-radius: 15px;
+    background: linear-gradient(
+        135deg,
+        rgba(255,152,0,.12),
+        rgba(255,255,255,.8)
+    );
+    border: 1px solid rgba(128,0,32,.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,.07);
+}
+
+.library-highlight strong {
+    display: block;
+    color: #800020;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.library-highlight span {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.library-features {
+    background: #fff8f3;
+}
+
+.library-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.library-card {
+    padding: 32px 27px;
+    border-radius: 20px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,152,0,.14),
+            rgba(255,255,255,.78)
+        );
+    border: 1px solid rgba(128,0,32,.10);
+    box-shadow: 0 12px 35px rgba(92,0,20,.08);
+    transition: .3s ease;
+}
+
+.library-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(92,0,20,.14);
+}
+
+.library-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #800020, #a0002d);
+    color: #fff;
+    font-size: 27px;
+}
+
+.library-card h3 {
+    margin-bottom: 12px;
+    color: #800020;
+    font-size: 21px;
+}
+
+.library-card p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+}
+
+.girls-library {
+    padding: 90px 0;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(128,0,32,.97),
+            rgba(104,0,27,.95)
+        );
+    color: #fff;
+}
+
+.girls-library-content {
+    max-width: 750px;
+}
+
+.girls-library-content > span {
+    color: #ffbd66;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.girls-library h2 {
+    margin: 12px 0 15px;
+    font-size: clamp(32px, 5vw, 52px);
+}
+
+.girls-library p {
+    max-width: 680px;
+    color: #f8e7df;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.practice-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.practice-item {
+    padding: 30px;
+    border-radius: 18px;
+    background: #fff;
+    border-left: 5px solid #ff9800;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.practice-item h3 {
+    margin-bottom: 10px;
+    color: #800020;
+}
+
+.practice-item p {
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.library-test-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.library-rules {
+    background: #fff8f3;
+}
+
+.rules-list {
+    max-width: 900px;
+    margin: auto;
+}
+
+.rule {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgba(128,0,32,.12);
+}
+
+.rule span {
+    min-width: 45px;
+    color: #ff8c00;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.rule p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.library-cta {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #800020, #5f0018);
+    color: #fff;
+}
+
+.library-cta h2 {
+    margin-bottom: 12px;
+    font-size: clamp(30px, 4vw, 45px);
+}
+
+.library-cta p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #f8e7df;
+    line-height: 1.7;
+}
+
+.library-cta-buttons {
+    justify-content: center;
+}
+
+
+/* =========================================
+   LIBRARY MOBILE RESPONSIVE
+   ========================================= */
+
+@media screen and (max-width: 950px) {
+
+    .library-highlight {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .library-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .practice-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .library-hero {
+        min-height: 520px;
+    }
+
+    .library-hero-content {
+        padding: 60px 0;
+    }
+
+    .library-hero h1 {
+        font-size: 42px;
+    }
+
+    .library-hero p {
+        font-size: 16px;
+    }
+
+    .library-section {
+        padding: 60px 0;
+    }
+
+    .library-highlight,
+    .library-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .library-card {
+        padding: 27px 22px;
+    }
+
+    .girls-library {
+        padding: 65px 0;
+    }
+
+    .girls-library h2 {
+        font-size: 35px;
+    }
+
+    .rule {
+        align-items: flex-start;
+    }
+
+    .library-btn {
+        width: 100%;
+    }
+
+    .library-hero-buttons,
+    .library-cta-buttons {
+        width: 100%;
+    }
+}
