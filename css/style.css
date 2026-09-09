@@ -2785,3 +2785,370 @@ a {
         width: 100%;
     }
 }
+/* =========================================
+   BESTECH EXAM RESULT PAGE
+   ========================================= */
+
+.result-hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #800020, #5f0018);
+    color: #fff;
+}
+
+.result-hero-content {
+    width: min(1150px, 90%);
+    margin: auto;
+    padding: 70px 0;
+}
+
+.result-badge {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 30px;
+    background: rgba(255,152,0,.15);
+    border: 1px solid rgba(255,190,80,.5);
+    color: #ffd27a;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.result-hero h1 {
+    margin: 20px 0 12px;
+    font-size: clamp(40px, 6vw, 65px);
+}
+
+.result-hero h1 span {
+    color: #ffb347;
+}
+
+.result-hero p {
+    max-width: 650px;
+    color: #f8e7df;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* SEARCH SECTION */
+
+.result-section {
+    padding: 80px 0;
+    background: #fff8f3;
+}
+
+.result-container {
+    width: min(900px, 90%);
+    margin: auto;
+}
+
+.result-search-card {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 15px 45px rgba(92,0,20,.10);
+}
+
+.result-card-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.result-card-heading span {
+    color: #c76b00;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.result-card-heading h2 {
+    margin: 10px 0;
+    color: #800020;
+    font-size: 32px;
+}
+
+.result-card-heading p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.result-form-group {
+    margin-bottom: 20px;
+}
+
+.result-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #800020;
+    font-weight: 700;
+}
+
+.result-form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: .25s ease;
+}
+
+.result-form-group input:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 0 3px rgba(255,152,0,.12);
+}
+
+.result-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #800020, #a0002d);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.result-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(128,0,32,.20);
+}
+
+.result-search-card .result-btn {
+    width: 100%;
+}
+
+.result-message {
+    margin-top: 18px;
+    text-align: center;
+    color: #800020;
+    font-weight: 600;
+}
+
+
+/* RESULT DISPLAY */
+
+.result-display-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.result-sheet {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid rgba(128,0,32,.12);
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 15px 45px rgba(0,0,0,.08);
+}
+
+.result-sheet-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #800020;
+}
+
+.result-sheet-header img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.result-sheet-header h2 {
+    margin: 0 0 5px;
+    color: #800020;
+}
+
+.result-sheet-header p {
+    margin: 0;
+    color: #777;
+}
+
+.result-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    padding: 18px 20px;
+    border-radius: 12px;
+    background: #fff8f3;
+}
+
+.result-status span {
+    color: #666;
+    font-weight: 700;
+}
+
+.result-status strong {
+    color: #800020;
+    font-size: 22px;
+}
+
+.result-student-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.result-student-info > div {
+    padding: 18px;
+    border-radius: 12px;
+    background: #fff8f3;
+}
+
+.result-student-info small {
+    display: block;
+    margin-bottom: 7px;
+    color: #888;
+}
+
+.result-student-info strong {
+    color: #800020;
+}
+
+.result-score-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.result-score-grid > div {
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #800020, #a0002d);
+    color: #fff;
+}
+
+.result-score-grid span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    opacity: .85;
+}
+
+.result-score-grid strong {
+    font-size: 28px;
+}
+
+.result-details {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.result-details p {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #666;
+}
+
+.result-details strong {
+    color: #800020;
+}
+
+.result-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.result-home-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* CTA */
+
+.result-cta {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #800020, #5f0018);
+    color: #fff;
+}
+
+.result-cta h2 {
+    margin-bottom: 12px;
+    font-size: clamp(30px, 4vw, 45px);
+}
+
+.result-cta p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #f8e7df;
+    line-height: 1.8;
+}
+
+.result-cta .result-btn {
+    background: linear-gradient(135deg, #ff9800, #ffb347);
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 700px) {
+
+    .result-search-card,
+    .result-sheet {
+        padding: 25px 20px;
+    }
+
+    .result-student-info,
+    .result-score-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .result-sheet-header {
+        align-items: flex-start;
+    }
+
+    .result-sheet-header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .result-sheet-header h2 {
+        font-size: 20px;
+    }
+
+    .result-details p {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .result-actions {
+        flex-direction: column;
+    }
+
+    .result-actions .result-btn,
+    .result-home-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

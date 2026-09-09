@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exam Result | BESTECH COMPUTER EDUCATION</title>
+
+    <meta name="description"
+          content="Check your BESTECH examination result online.">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="navbar">
+
+        <div class="brand">
+
+            <div class="logo-box">
+                <img src="images/logo.png"
+                     alt="BESTECH COMPUTER EDUCATION Logo">
+            </div>
+
+            <div class="brand-text">
+                <h2>BESTECH COMPUTER EDUCATION</h2>
+            </div>
+        </div>
+
+        <button type="button"
+                class="menu-toggle"
+                id="menuToggle">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="courses.html">Courses</a>
+                </li>
+
+                <li>
+                    <a href="library.html">Library</a>
+                </li>
+
+                <li>
+                    <a href="student.html">Student Zone</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <a href="https://amit8108gupta.github.io/BESTECH-CCC-PORTAL/"
+           class="exam-btn"
+           target="_blank">
+            Online Exam
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= RESULT HERO ================= -->
+
+<section class="result-hero">
+
+    <div class="result-hero-content">
+
+        <span class="result-badge">
+            BESTECH EXAMINATION
+        </span>
+
+        <h1>
+            Check Your <span>Result</span>
+        </h1>
+
+        <p>
+            Enter your details below to check your
+            examination result.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RESULT SEARCH ================= -->
+
+<section class="result-section">
+
+    <div class="result-container">
+
+        <div class="result-search-card">
+
+            <div class="result-card-heading">
+
+                <span>RESULT SEARCH</span>
+
+                <h2>
+                    Find Your Result
+                </h2>
+
+                <p>
+                    Enter your registered mobile number
+                    and test code.
+                </p>
+
+            </div>
+
+
+            <form id="resultForm">
+
+                <div class="result-form-group">
+
+                    <label for="mobile">
+                        Mobile Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="mobile"
+                        name="mobile"
+                        placeholder="Enter mobile number"
+                        maxlength="10"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="result-form-group">
+
+                    <label for="testCode">
+                        Test Code
+                    </label>
+
+                    <input
+                        type="text"
+                        id="testCode"
+                        name="testCode"
+                        placeholder="Example: CCC-001"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit"
+                        class="result-btn">
+                    Check Result
+                </button>
+
+            </form>
+
+
+            <div id="resultMessage"
+                 class="result-message">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RESULT DISPLAY ================= -->
+
+<section class="result-display-section"
+         id="resultDisplay"
+         style="display:none;">
+
+    <div class="result-container">
+
+        <div class="result-sheet">
+
+            <div class="result-sheet-header">
+
+                <img src="images/logo.png"
+                     alt="BESTECH Logo">
+
+                <div>
+                    <h2>
+                        BESTECH COMPUTER EDUCATION
+                    </h2>
+
+                    <p>
+                        Examination Result
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="result-status">
+                <span>RESULT</span>
+                <strong id="resultStatus">
+                    —
+                </strong>
+            </div>
+
+
+            <div class="result-student-info">
+
+                <div>
+                    <small>Student Name</small>
+                    <strong id="studentName">—</strong>
+                </div>
+
+                <div>
+                    <small>Mobile Number</small>
+                    <strong id="studentMobile">—</strong>
+                </div>
+
+                <div>
+                    <small>Test Code</small>
+                    <strong id="studentTestCode">—</strong>
+                </div>
+
+            </div>
+
+
+            <div class="result-score-grid">
+
+                <div>
+                    <span>Score</span>
+                    <strong id="resultScore">—</strong>
+                </div>
+
+                <div>
+                    <span>Total</span>
+                    <strong id="resultTotal">—</strong>
+                </div>
+
+                <div>
+                    <span>Percentage</span>
+                    <strong id="resultPercentage">—</strong>
+                </div>
+
+            </div>
+
+
+            <div class="result-details">
+
+                <p>
+                    <strong>Time Taken:</strong>
+                    <span id="resultTime">—</span>
+                </p>
+
+                <p>
+                    <strong>Submitted:</strong>
+                    <span id="resultDate">—</span>
+                </p>
+
+            </div>
+
+
+            <div class="result-actions">
+
+                <button type="button"
+                        onclick="window.print()"
+                        class="result-btn">
+                    Print Result
+                </button>
+
+                <a href="student.html"
+                   class="result-home-btn">
+                    Student Zone
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="result-cta">
+
+    <div class="result-container">
+
+        <h2>
+            Haven't Attempted the Test Yet?
+        </h2>
+
+        <p>
+            Practice first and check your performance
+            through the BESTECH CCC Online Exam Portal.
+        </p>
+
+        <a href="https://amit8108gupta.github.io/BESTECH-CCC-PORTAL/"
+           target="_blank"
+           class="result-btn">
+            Start Online Test
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h3>
+                BESTECH COMPUTER EDUCATION
+            </h3>
+
+            <p>
+                Computer Education • Learning • Library
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>Quick Links</h4>
+
+            <div class="footer-link-row">
+
+                <a href="index.html">Home</a>
+
+                <a href="courses.html">Courses</a>
+
+                <a href="library.html">Library</a>
+
+                <a href="student.html">Student Zone</a>
+
+                <a href="result.html">Result</a>
+
+                <a href="index.html#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <h4>Contact</h4>
+
+            <p>
+                📞 7021639397
+            </p>
+
+            <p>
+                📍 Pahitipur, Orang Nagar, NH-128,
+                Ambedkar Nagar, Uttar Pradesh
+            </p>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 BESTECH COMPUTER EDUCATION &
+                LEARNING LIBRARY. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
